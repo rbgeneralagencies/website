@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RB General Agencies | Technology & Digital Solutions</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f8fb;
+    color:#222;
+}
+
+/* Navigation */
+
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:rgba(4,26,58,.95);
+    backdrop-filter:blur(10px);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    z-index:1000;
+}
+
+nav h2{
+    color:#fff;
+    font-size:28px;
+    letter-spacing:1px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:30px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+    font-weight:500;
+}
+
+nav ul li a:hover{
+    color:#00d9ff;
+}
+
+/* Hero */
+
+.hero{
+    height:100vh;
+    background:
+    linear-gradient(rgba(2,12,27,.82),rgba(2,12,27,.82)),
+    url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:850px;
+    margin:auto;
+    line-height:1.8;
+    font-size:20px;
+}
+
+.hero a{
+    display:inline-block;
+    margin-top:35px;
+    padding:16px 40px;
+    background:#00b4ff;
+    color:white;
+    text-decoration:none;
+    border-radius:40px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.hero a:hover{
+    background:#0088cc;
+    transform:translateY(-3px);
+}
+
+/* Sections */
+
+section{
+    padding:90px 10%;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.title h2{
+    font-size:40px;
+    color:#002855;
+}
+
+.title p{
+    color:#666;
+    margin-top:15px;
+}
+
+/* About */
+
+.about{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:50px;
+    align-items:center;
+}
+
+.about img{
+    width:100%;
+    border-radius:15px;
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+
+.about-text h3{
+    color:#003366;
+    margin-bottom:20px;
+    font-size:30px;
+}
+
+.about-text p{
+    line-height:1.9;
+    color:#555;
+}
+
+/* Services */
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    padding:40px;
+    border-radius:18px;
+    transition:.4s;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+
+.card h3{
+    margin-bottom:20px;
+    color:#003366;
+}
+
+.card p{
+    color:#555;
+    line-height:1.8;
+}
+
+/* Why Us */
+
+.why{
+    background:#002855;
+    color:white;
+    border-radius:20px;
+}
+
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+    margin-top:40px;
+}
+
+.box{
+    text-align:center;
+    padding:25px;
+}
+
+.box h3{
+    color:#00d9ff;
+    font-size:34px;
+}
+
+/* Contact */
+
+.contact{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:40px;
+}
+
+.info{
+    background:white;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.info h3{
+    color:#003366;
+    margin-bottom:20px;
+}
+
+.info p{
+    margin-bottom:15px;
+    color:#555;
+    line-height:1.8;
+}
+
+footer{
+    background:#02182d;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:40px;
+}
+
+.hero p{
+font-size:17px;
+}
+
+nav{
+flex-direction:column;
+}
+
+nav ul{
+margin-top:15px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<h2>RB General Agencies</h2>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#why">Why Us</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<div>
+
+<h1>Reliable Technology Solutions For Modern Businesses</h1>
+
+<p>
+
+RB General Agencies is a trusted Ugandan technology company dedicated to helping individuals, organizations, and businesses achieve more through innovative IT services. We specialize in professional computer repair and maintenance, creative graphic design, and custom software development tailored to meet your unique business needs.
+
+</p>
+
+<a href="#contact">Get In Touch</a>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<div class="title">
+
+<h2>About Us</h2>
+
+<p>Your trusted partner for digital transformation.</p>
+
+</div>
+
+<div class="about">
+
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80">
+
+<div class="about-text">
+
+<h3>Building Better Technology Experiences</h3>
+
+<p>
+
+At RB General Agencies, we combine technical expertise, creativity, and innovation to deliver reliable technology solutions that help businesses thrive. Whether your computer systems require professional maintenance, your business needs an eye-catching brand identity, or you're looking for a custom software solution, our experienced team delivers quality services with professionalism and integrity.
+
+<br><br>
+
+Our mission is to empower businesses through affordable, dependable, and innovative technology services while maintaining excellent customer relationships built on trust and quality workmanship.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="services">
+
+<div class="title">
+
+<h2>Our Services</h2>
+
+<p>Professional solutions tailored to your business.</p>
+
+</div>
+
+<div class="services">
+
+<div class="card">
+
+<h3>Computer Repair & Maintenance</h3>
+
+<p>
+
+We diagnose and repair desktops and laptops, remove viruses and malware, install operating systems, recover data, upgrade hardware, optimize performance, configure networks, and provide preventive maintenance that keeps your computers running efficiently.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Graphic Design</h3>
+
+<p>
+
+Creative branding solutions including logos, flyers, posters, brochures, business cards, social media graphics, banners, company profiles, and promotional materials designed to give your business a professional image.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Software Development</h3>
+
+<p>
+
+Custom software, web applications, business management systems, databases, mobile-friendly solutions, and digital automation tools developed specifically to improve efficiency and support business growth.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="why">
+
+<div class="why">
+
+<div class="title">
+
+<h2 style="color:white;">Why Choose RB General Agencies?</h2>
+
+<p style="color:#ddd;">Committed to excellence and customer satisfaction.</p>
+
+</div>
+
+<div class="why-grid">
+
+<div class="box">
+<h3>100%</h3>
+<p>Customer Commitment</p>
+</div>
+
+<div class="box">
+<h3>Quality</h3>
+<p>Professional Services</p>
+</div>
+
+<div class="box">
+<h3>Fast</h3>
+<p>Reliable Support</p>
+</div>
+
+<div class="box">
+<h3>Modern</h3>
+<p>Technology Solutions</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<div class="title">
+
+<h2>Contact Us</h2>
+
+<p>We would love to work with you.</p>
+
+</div>
+
+<div class="contact">
+
+<div class="info">
+
+<h3>Office Location</h3>
+
+<p>
+
+📍 Prime Complex Building<br>
+
+Plot 2, Burton Street<br>
+
+Kampala, Uganda
+
+</p>
+
+</div>
+
+<div class="info">
+
+<h3>Contact Information</h3>
+
+<p>
+
+📧 buzynjuki@gmail.com
+
+</p>
+
+<p>
+
+📧 njukibb@yahoo.com
+
+</p>
+
+<p>
+
+Need computer support, graphic design, or software development? Contact RB General Agencies today and let us provide the right technology solutions for your business.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 RB General Agencies. All Rights Reserved.<br>
+
+Professional Technology Solutions • Kampala • Uganda
+
+</footer>
+
+</body>
+</html>
